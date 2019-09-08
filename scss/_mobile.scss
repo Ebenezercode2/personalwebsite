@@ -1,9 +1,15 @@
 //Widescreens
 @include mediaXl {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 //Desktops and Laptops
 @include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 // Tablets & Small Laptops
@@ -44,6 +50,21 @@
       width: 155px;
       height: 155px;
     }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
+  }
+
+   .projects {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
